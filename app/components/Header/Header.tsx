@@ -4,7 +4,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 
 const Header = () => {
   return (
-    <header className="bg-gray-500 text-white py-2">
+    <header className="bg-gray-500 text-white p-4">
     <div className='container rx-auto flex justify-between items-center'>
       <h1 className='text-3xl font-bold italic'>Siddnom</h1>       
       <nav>
