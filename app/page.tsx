@@ -3,6 +3,7 @@ import Link from "next/link"
 import Image from "next/image"
 import React, { useEffect } from 'react'
 
+import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer'
 import Hero from "./components/Hero/Hero"
 import About from "./components/About/About"
@@ -27,7 +28,7 @@ const Homepage = () => {
 return (
   <div className="flex h-screen flex-col">
     
-    
+  <Header />
 <Hero/> 
 <About/>
 <Project/>

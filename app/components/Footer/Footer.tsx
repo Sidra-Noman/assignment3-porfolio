@@ -1,25 +1,47 @@
 import React from 'react'
+import Link from "next/link"
+import Image from "next/image";
+
 
 const Footer = () => {
   return (
-    
-       <footer className='bg-gray-900 text-white text-center mt-16 py-6'>
-                    @siddnom | All rights reserved 2024.
-        <div className=" ">
-          <ul className='flex gap-6 '>
-     <li> <a href="#">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="Facebook" className='w-9 h-9 ' />
-      </a></li>
-     <li> <a href="#">
-        <img src="https://e7.pngegg.com/pngimages/708/311/png-clipart-icon-logo-twitter-logo-twitter-logo-blue-social-media-thumbnail.png" alt="Twitter" className='w-9 h-9 '/>
-      </a></li>
-     <li> <a href="#">
-        <img src="https://png.pngtree.com/element_our/sm/20180506/sm_5aeee1ca3107b.jpg" alt="Instagram" className='w-9 h-9 '/>
-      </a></li>
-      </ul>
+    <footer className='bg-gray-900 text-white text-center mt-14 p-3'>
+      <p className='mb-4'>@siddnom | All rights reserved 2024.</p>
+      <div className='flex justify-center'>
+        <ul className='flex flex-wrap justify-center gap-4 sm:gap-6'>
+          <li>
+            <Link href="https://www.facebook.com/sidra.noman.73">
+              <Image 
+                src="/images/Facebook_Logo_2023.png"
+                alt='facebook'
+                width={35}
+                height={35}       
+              />
+            </Link>
+          </li>
+          <li>
+            <Link href="https://www.linkedin.com/in/sidra-noman-69813028b">
+              <Image 
+                src="/images/circle-linkedin.png"
+                alt='linkedin'
+                width={35}
+                height={35}       
+              />
+            </Link>
+          </li>
+          <li>
+            <Link href="https://www.instagram.com/sidnoms_foodies?igsh=MWh0NnNkN28zdnBsbQ==">
+              <Image 
+                src="/images/Instagram_icon.png"
+                alt='instagram'
+                width={35}
+                height={35}       
+              />
+            </Link>
+          </li>
+        </ul>
       </div>
-       </footer>
-  
+    </footer>
   );
 };
 
